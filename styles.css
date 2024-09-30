@@ -120,12 +120,16 @@ body::after {
 
 .social-btn {
   margin: 15px;
-  padding: 15px 30px;
+  width: 80px;
+  height: 80px;
   border: none;
   color: #fff;
   font-size: 1.3rem;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.4s ease, background 0.4s ease;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -138,6 +142,7 @@ body::after {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
+/* Individual Button Styles */
 .facebook {
   background: #3b5998;
 }
@@ -154,6 +159,10 @@ body::after {
   background: #e4405f;
 }
 
+.whatsapp {
+  background: #25d366;
+}
+
 @keyframes floatButtons {
   0% {
     transform: translateY(0px);
@@ -166,8 +175,9 @@ body::after {
 /* Responsive */
 @media (max-width: 768px) {
   .social-btn {
+    width: 60px;
+    height: 60px;
     font-size: 1rem;
-    padding: 10px 20px;
   }
 
   .header h1 {
